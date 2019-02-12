@@ -10,3 +10,7 @@ RUN apt-get -y install unzip && \
     apt-get -y remove unzip && \
     apt-get clean && \
     rm /tmp/terraform.zip
+
+VOLUME ["/data"]
+
+WORKDIR /data
